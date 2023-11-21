@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: 0 none;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1;
+  font-family: "Microsoft YaHei";
+  color: rgba(56, 56, 56, 1);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  word-wrap: break-word;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+body,
+html,
+#app {
+  height: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex_column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.flex_1 {
+  flex: 1 1 0;
+}
+.cyan {
+  color: #02a7f0;
+}
+.fs_12 {
+  font-size: 12px;
+}
+.fs_14 {
+  font-size: 14px;
+}
+.fs_16 {
+  font-size: 16px;
+}
+.fs_20 {
+  font-size: 20px;
+}
+.fs_22 {
+  font-size: 24px;
+}
+.fs_24 {
+  font-size: 24px;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+.ml_10 {
+  margin-left: 10px;
+}
+.mr_10 {
+  margin-right: 10px;
+}
+.mb_10 {
+  margin-bottom: 10px;
+}
+.mt_20 {
+  margin-top: 20px;
+}
+.ml_20 {
+  margin-left: 20px;
+}
+.mr_20 {
+  margin-right: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.text_right {
+  text-align: right;
+}
+.select_none {
+  user-select: none;
+}
+.white_nowrap {
+  white-space: nowrap;
+}
+.pointer {
+  cursor: pointer;
+}
+.searchOptions > * {
+  margin-inline-end: 16px;
+}
+.ant-form-inline {
+  gap: 10px 0;
+}
+.bsTableOptions {
+  > a + a {
+    &::before {
+      content: "|";
+      color: #ebeef3;
+      margin: 0 5px;
+    }
+  }
+}
+.subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  &::before {
+    content: "";
+    width: 5px;
+    height: 14px;
+    background-color: #02a7f0;
+    margin-right: 5px;
+  }
+}
+.warning {
+  color: #faad14;
+  &:hover {
+    color: rgba($color: #faad14, $alpha: 0.6);
+  }
+}
+.danger {
+  color: #ff4d4f;
+  &:hover {
+    color: rgba($color: #ff4d4f, $alpha: 0.6);
+  }
+}

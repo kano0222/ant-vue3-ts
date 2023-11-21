@@ -13,9 +13,18 @@ export default defineConfig({
     vue(),
     VueSetupExtend(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue', 'vue-router'],
+      dirs: [
+        'src/hooks',
+      ],
+      // dts: 'src/auto-imports.d.ts',
     }),
     Components({
+      // 指定组件位置，默认是src/components
+      // dirs: ['src/components/common'],
+      // extensions: ['vue'],
+      // 配置文件生成位置
+      // dts: 'components.d.ts',
       resolvers: [
         AntDesignVueResolver({
           importStyle: false, // css in js
