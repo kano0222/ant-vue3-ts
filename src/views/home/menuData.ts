@@ -19,8 +19,8 @@ export default [
         key: '/taskList'
       },
       {
-        label: '任务单列表1',
-        key: '/taskList1'
+        label: 'x6Demo',
+        key: '/x6Demo'
       }
     ],
   },

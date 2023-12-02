@@ -21,10 +21,10 @@ export const routes: RouteRecordRaw[] = [
         meta: { title: '任务单列表' },
       },
       {
-        path: '/taskList1',
-        name: 'taskList1',
-        component: () => import('@/views/taskList/taskList copy.vue'),
-        meta: { title: '任务单列表1' },
+        path: '/x6Demo',
+        name: 'x6Demo',
+        component: () => import('@/views/x6Demo/index.vue'),
+        meta: { title: 'x6Demo' },
       }
     ]
   }
