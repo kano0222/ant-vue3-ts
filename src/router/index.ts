@@ -25,6 +25,12 @@ export const routes: RouteRecordRaw[] = [
         name: 'x6Demo',
         component: () => import('@/views/x6Demo/index.vue'),
         meta: { title: 'x6Demo' },
+      },
+      {
+        path: '/storyTree',
+        name: 'storyTree',
+        component: () => import('@/views/storyTree/index.vue'),
+        meta: { title: 'storyTree' },
       }
     ]
   }

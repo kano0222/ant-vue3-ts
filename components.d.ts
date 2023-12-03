@@ -28,7 +28,12 @@ declare module 'vue' {
     ATreeSelect: typeof import('ant-design-vue/es')['TreeSelect']
     BsAntTable: typeof import('./src/components/bsAntTable.vue')['default']
     BsElTable: typeof import('./src/components/bsElTable.vue')['default']
+    ElCard: typeof import('element-plus/es')['ElCard']
+    ElTree: typeof import('element-plus/es')['ElTree']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+  }
+  export interface ComponentCustomProperties {
+    vLoading: typeof import('element-plus/es')['ElLoadingDirective']
   }
 }

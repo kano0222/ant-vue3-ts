@@ -22,6 +22,10 @@ export default [
         label: 'x6Demo',
         key: '/x6Demo'
       },
+      {
+        label: 'storyTree',
+        key: '/storyTree'
+      },
     ],
   }
 ] 
