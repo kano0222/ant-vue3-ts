@@ -11,32 +11,17 @@ import {
 export default [
   {
     icon: () => h(PieChartOutlined),
-    label: '实施管理',
+    label: 'demo',
     key: '1',
     children: [
       {
-        label: '任务单列表',
+        label: '列表',
         key: '/taskList'
       },
       {
         label: 'x6Demo',
         key: '/x6Demo'
-      }
-    ],
-  },
-  {
-    icon: () => h(PieChartOutlined),
-    label: '实施管理',
-    key: '2',
-    children: [
-      {
-        label: '任务单列表',
-        key: '/taskList123'
       },
-      {
-        label: '任务单列表1',
-        key: '/taskList11234'
-      }
     ],
-  },
+  }
 ] 
