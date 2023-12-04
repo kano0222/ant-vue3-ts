@@ -16,12 +16,11 @@
 </template>
 
 <script setup lang="ts">
-import { loginApi, sendApi } from '@/api/commonApi'
 import { isPhoneNumber } from '@/utils/validate'
 import { message } from 'ant-design-vue'
 const [messageApi] = message.useMessage()
-import { useRouter } from 'vue-router'
-const router = useRouter()
+// import { useRouter } from 'vue-router'
+// const router = useRouter()
 const formData = reactive({ mobile: '', validateCode: '' })
 const time = ref(0)
 let timer: NodeJS.Timeout
@@ -37,11 +36,11 @@ const getCode = () => {
     }
     time.value--
   }, 1000)
-  sendApi({ mobile: formData.mobile }).then(res => {
-    if (res.data) {
-      message.success('发送成功')
-    }
-  })
+  // sendApi({ mobile: formData.mobile }).then(res => {
+  //   if (res.data) {
+  //     message.success('发送成功')
+  //   }
+  // })
 }
 const login = () => {
   messageApi.error('请填写正确的手机号')
@@ -55,15 +54,15 @@ const login = () => {
     message.error('请填写验证码')
     return
   }
-  loginApi(formData).then(res => {
-    if (res.data) {
-      localStorage.setItem("token", res.data.authToken)
-      localStorage.setItem("memberId", res.data.memberId)
-      localStorage.setItem("headurl", res.data.headurl)
-      localStorage.setItem("realname", res.data.realname)
-      router.push("/")
-    }
-  })
+  // loginApi(formData).then(res => {
+  //   if (res.data) {
+  //     localStorage.setItem("token", res.data.authToken)
+  //     localStorage.setItem("memberId", res.data.memberId)
+  //     localStorage.setItem("headUrl", res.data.headUrl)
+  //     localStorage.setItem("realName", res.data.realName)
+  //     router.push("/")
+  //   }
+  // })
 
 
 }
